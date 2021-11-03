@@ -2,11 +2,11 @@
 
 import numpy as np
 import jax.numpy as jnp
-from jax import jit, partial
+from jax import jit
+from functools import partial
 import dynamics
 
 # initialize random polar coordinates with dimension dim
-# TODO @Mathias please check if this is fine like that for random process
 _rng = np.random.RandomState(12937)
 
 
